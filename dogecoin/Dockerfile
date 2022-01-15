@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
  && rm -rf /var/lib/apt/lists/*
 
 ENV PATH $PATH:/opt/dogecoin/bin
-ENV DOGECOIN_VERSION 1.14.4
+ENV DOGECOIN_VERSION 1.14.5
 
 ADD https://github.com/dogecoin/dogecoin/releases/download/v${DOGECOIN_VERSION}/dogecoin-${DOGECOIN_VERSION}-x86_64-linux-gnu.tar.gz /tmp
 RUN cd /opt \
